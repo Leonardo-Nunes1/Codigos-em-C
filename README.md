@@ -1,2 +1,1 @@
-# Codigos-em-C
-Codigos feito na linguagem C
+Aqui será postado dos os meus projetos feito na linguagem C
