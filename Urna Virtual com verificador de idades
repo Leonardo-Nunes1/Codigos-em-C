@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int main(void){
+	
+	int opcao, idade;
+	
+	printf("---Urna Virtual---");
+	
+	printf("\nPrimeiro, verifique a sua idade para continuarmos com as votacoes: ");
+	scanf("%i", &idade);
+	
+	if(idade>=18){
+		printf("\n\nAcesso permitido, seguindo para a proxima etapa...");
+		
+	} else if(idade==16 || idade==17){
+		printf("\nAcesso permitido por voto facultativo, seguindo para a proxima etapa...");
+		
+	} else {
+		printf("\nIdade insuficiente para votar.");
+		return 0;
+	}
+	
+	printf("\n\nPara selecionar o seu candidato selecione:\n1 - Leonardo Nunes Lima\n2- Maria Eduarda\n3- Matheus Silva Souza\n4- Lucas Lima Da Rocha\n\nSelecione o numero a seguir: ");
+	scanf("%i", &opcao);
+	
+	switch (opcao){
+		
+		case 1:
+			printf("\nSelecionado o candidato numero 1, voto confirmado.");
+			break;
+			
+		case 2:
+			printf("\nSelecionado o candidato numero 2, voto confirmado.");
+			break;
+			
+		case 3:
+			printf("\nSelecionado o candidato numero 3, voto confirmado.");
+			break;
+			
+		case 4:
+		printf("\nSelecionado o candidato numero 4, voto confirmado.");
+		break;
+		
+		default:
+			printf("Somente candidatos de 1 a 4.");
+		
+		
+	}
+	
+	return 0;
+}
