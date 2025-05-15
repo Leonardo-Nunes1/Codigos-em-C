@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(void){
+	
+	int n1, n2, n3, media;
+	
+	printf("Digite a primeira nota: ");
+	scanf("%i", &n1);
+	
+	printf("\nDigite a segunda nota: ");
+	scanf("%i", &n2);
+
+	printf("\nDigite a terceira nota: ");
+	scanf("%i", &n3);
+	
+	media = (n1+n2+n3)/3;
+	
+	printf("\nAs notas digitadas foram de: %i, %i, %i", n1,n2,n3);
+	
+	if (media >=6){
+		
+		printf("\nAluno passou de ano!");
+	
+	} else {
+		
+		printf("\nAluno reprovou de ano!");
+	}
+	
+	return 0;	
+}
